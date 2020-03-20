@@ -26,7 +26,10 @@ const formatter = new Intl.NumberFormat('en-US', {
 })
 
 const CoinCard = () => {
-  const { data, loading } = useQuery(GET_COINS_QUERY)
+  const { data, loading } = useQuery(GET_COINS_QUERY, {
+    fetchPolicy: 'network-only',
+    pollInterval: 5000,
+  })
 
   return (
     <>
