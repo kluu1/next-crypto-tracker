@@ -1,5 +1,4 @@
 import { ApolloServer } from 'apollo-server-micro';
-import connectDb from '../../../utils/connectDb';
 import resolvers from './resolvers';
 import typeDefs from './typeDefs';
 
@@ -16,4 +15,4 @@ export const config = {
   }
 };
 
-export default connectDb(server);
+export default server;
