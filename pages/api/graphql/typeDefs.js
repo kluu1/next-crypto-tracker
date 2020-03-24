@@ -1,4 +1,4 @@
-import { gql } from 'apollo-server-micro';
+import { gql } from 'apollo-server-micro'
 
 const typeDefs = gql`
   type Coin {
@@ -14,9 +14,20 @@ const typeDefs = gql`
     max_supply: String
   }
 
+  type CoinDetails {
+    volume: String!
+    price_change: String!
+    price_change_pct: String!
+    volume_change: String!
+    volume_change_pct: String!
+    market_cap_change: String!
+    market_cap_change_pct: String!
+  }
+
   type Query {
     getCoins: [Coin]
+    getCoinDetails(coinid: String!, interval: String!): CoinDetails
   }
-`;
+`
 
-export default typeDefs;
+export default typeDefs
