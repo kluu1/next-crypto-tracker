@@ -14,3 +14,4 @@ This application retrieves the top 30 cryptocurrencies
 
 ### Preview
 ![Alt text](/public/app.png?raw=true "app")
+![Alt text](/public/app1.png?raw=true "app1")
