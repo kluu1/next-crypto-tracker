@@ -14,7 +14,7 @@
     "apollo-link-http": "^1.5.16",
     "apollo-server-micro": "^2.11.0",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "9.3.1",
+    "next": "9.5.5",
     "next-with-apollo": "^5.0.0",
     "nomics": "^0.5.3",
     "react": "16.13.1",
